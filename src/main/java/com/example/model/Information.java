@@ -12,28 +12,23 @@ public class Information {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	private int patientId;
-	private String FamilyMemberName;
+	
+	private String name;
 	private String relationship;
 	private int phoneNo;
 	private String address;
+	
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
-	public int getPatientId() {
-		return patientId;
+	public String getName() {
+		return name;
 	}
-	public void setPatientId(int patientId) {
-		this.patientId = patientId;
-	}
-	public String getFamilyMemberName() {
-		return FamilyMemberName;
-	}
-	public void setFamilyMemberName(String familyMemberName) {
-		FamilyMemberName = familyMemberName;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public String getRelationship() {
 		return relationship;
@@ -53,5 +48,5 @@ public class Information {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	
+
 }
